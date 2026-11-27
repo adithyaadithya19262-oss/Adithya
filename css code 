@@ -1,0 +1,41 @@
+cat > static/style.css <<'CSS'
+body {
+    background: #101820;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 70px auto;
+    padding: 30px;
+    background: #1c2935;
+    border-radius: 12px;
+}
+
+h1 {
+    color: #00e5ff;
+}
+
+input {
+    padding: 13px;
+    width: 55%;
+    border-radius: 5px;
+}
+
+button {
+    padding: 13px 22px;
+    background: #00bcd4;
+    border: none;
+    cursor: pointer;
+}
+
+pre {
+    text-align: left;
+    background: #080e14;
+    padding: 20px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+CSS
