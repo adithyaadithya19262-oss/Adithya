@@ -42,6 +42,6 @@ Step 3: Install Flask
 pip install flask
 
 Step 4: Create the Python file
-nano app.py
+nano app.py 
 
  
