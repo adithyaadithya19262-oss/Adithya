@@ -1,0 +1,45 @@
+cat > app.py <<'PY'
+from flask import Flask, render_template, request
+import subprocess
+import ipaddress
+
+app = Flask(__name__)
+
+@app.route("/", methods=["GET", "POST"])
+def home():
+    results = []
+    error = ""
+
+    if request.method == "POST":
+        target = request.form.get("target", "").strip()
+
+        try:
+            ipaddress.ip_network(target, strict=False)
+
+            scan = subprocess.run(
+                ["nmap", "-sT", "-sV", "--top-ports",
+                 "100", "-oN", "-", target],
+                capture_output=True,
+                text=True,
+                timeout=120
+            )
+
+            if scan.returncode == 0:
+                results = scan.stdout.splitlines()
+            else:
+                error = scan.stderr or "Scan failed."
+
+        except ValueError:
+            error = "Invalid IP address or network."
+        except subprocess.TimeoutExpired:
+            error = "Scan timed out."
+
+    return render_template(
+        "index.html",
+        results=results,
+        error=error
+    )
+
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=5000, debug=False)
+PY
