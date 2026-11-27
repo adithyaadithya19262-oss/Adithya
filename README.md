@@ -31,17 +31,26 @@ The tool checks whether ports are open or closed.
 Results are displayed on the website.
 
 Step 1: Open Terminal
+
+
+
 mkdir Network-Scanner-Tool
 cd Network-Scanner-Tool
 
+
 Step 2: Create a virtual environment
+
+
 python3 -m venv venv
 source venv/bin/activate
 
 Step 3: Install Flask
+
 pip install flask
 
 Step 4: Create the Python file
+
+
 nano app.py 
 
  
