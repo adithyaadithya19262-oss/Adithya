@@ -72,12 +72,7 @@ http://127.0.0.1:5000
       NETWORK SCANNER TOOL
 ================================
 
-Target IP: 192.168.1.1
-
-Port 21  : CLOSED
-Port 22  : OPEN
-Port 80  : OPEN
-Port 443 : OPEN
+Target IP: 127.0.0.1
 
 Scan Completed Successfully!
 
