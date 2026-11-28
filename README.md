@@ -91,10 +91,6 @@ Sample output for demonstration only.
 - Network administration
 - Ethical hacking practice
 
-⚠️ Disclaimer
-
-This tool is developed for educational and ethical cybersecurity purposes only. Scan only networks and systems for which you have permission.
-
 👨‍💻 Author
 
 Developed as a Cybersecurity Mini Project.
@@ -125,6 +121,9 @@ pip install flask
 Step 4: Create the Python file
 
 
-nano app.py 
+nano app.py
+
+
+Author by--Adithya km
 
  
