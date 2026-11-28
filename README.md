@@ -1,34 +1,108 @@
-A Network Scanner Tool is a cybersecurity application used to scan a computer network and identify connected devices, IP addresses, open ports, and running services.
-It helps network administrators and cybersecurity students understand network activity and identify possible security weaknesses.
 
-what it does
-Our Network Scanner Tool performs the following tasks:
-IP Address Detection: Identifies the target device's IP address.
-Host Discovery: Finds active devices connected to a network.
-Port Scanning: Checks which ports are open or closed.
-Service Detection: Identifies services running on open ports.
-Banner Grabbing: Collects available service information.
-Security Analysis: Highlights potentially risky open ports.
-Scan Results: Displays the scanning results on a web page.
+🔍 Network Scanner Tool
 
- Technologies used
-Technology Purpose
-Python Main programming language
-Flask Web application
-HTML Website structure
-CSS Website design
-JavaScript User interaction
-Socket Port scanning
-Kali Linux Execution environment
-GitHub Project storage
+📌 Project Overview
 
-Working process:
-User opens the Network Scanner website.
-Enters an IP address.
-Clicks the Scan button.
-Python starts scanning the selected ports.
-The tool checks whether ports are open or closed.
-Results are displayed on the website.
+The Network Scanner Tool is a cybersecurity project developed using Python. It is designed to scan a network or target IP address and identify active hosts, open ports, and available network services.
+
+This tool helps users understand network security and identify potentially exposed ports.
+
+🎯 Objectives
+
+- Identify active hosts on a network.
+- Scan open and closed ports.
+- Detect available network services.
+- Retrieve service banners when available.
+- Understand basic network security concepts.
+
+🛠️ Technologies Used
+
+- Python 3
+- Kali Linux
+- Socket Programming
+- Asyncio
+- HTML and CSS (if using the web interface)
+- Git and GitHub
+
+⚙️ Features
+
+- IP address scanning
+- Port scanning
+- Open port detection
+- Service banner detection
+- Network information gathering
+- Simple and user-friendly interface (if enabled)
+
+💻 Requirements
+
+- Kali Linux or Linux operating system
+- Python 3
+- Git
+- Basic knowledge of networking
+
+🚀 Installation and Execution
+
+Step 1: Clone the Repository
+
+git clone https://github.com/YOUR-USERNAME/Network-Scanner-Tool.git
+
+Step 2: Open Project Folder
+
+cd Network-Scanner-Tool
+
+Step 3: Install Requirements
+
+pip install -r requirements.txt
+
+Step 4: Run the Scanner
+
+python3 scanner.py
+
+If your project uses a Flask web interface, run:
+
+python3 app.py
+
+Open your browser and visit:
+
+http://127.0.0.1:5000
+
+📊 Sample Output
+
+================================
+      NETWORK SCANNER TOOL
+================================
+
+Target IP: 192.168.1.1
+
+Port 21  : CLOSED
+Port 22  : OPEN
+Port 80  : OPEN
+Port 443 : OPEN
+
+Scan Completed Successfully!
+
+Sample output for demonstration only.
+
+🔐 Applications
+
+- Network security testing
+- Open port identification
+- Basic cybersecurity learning
+- Network administration
+- Ethical hacking practice
+
+⚠️ Disclaimer
+
+This tool is developed for educational and ethical cybersecurity purposes only. Scan only networks and systems for which you have permission.
+
+👨‍💻 Author
+
+Developed as a Cybersecurity Mini Project.
+
+Project Name: Network Scanner Tool
+Platform: Kali Linux
+Language: Python
+Category: Cybersecurity
 
 Step 1: Open Terminal
 
